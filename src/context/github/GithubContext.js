@@ -20,4 +20,13 @@ export const GithubProvider = ({children}) => {
 		setUsers(data);
 		setLoading(false);
 	}
+
+	return <GithubProvider value={{
+		users,
+		loading
+	}}>
+		{children}
+	</GithubProvider>
 }
+
+export default GithubContext;
