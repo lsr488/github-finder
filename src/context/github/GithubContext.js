@@ -72,7 +72,8 @@ export const GithubProvider = ({children}) => {
 			loading: state.loading,
 			user: state.user,
 			searchUsers,
-			clearUsers
+			clearUsers,
+			getUser
 	}}>
 		{children}
 	</GithubContext.Provider>
